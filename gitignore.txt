@@ -1,0 +1,4 @@
+
+reports.db
+*.pyc
+/flask_session

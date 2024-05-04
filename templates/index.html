@@ -1,0 +1,357 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+
+<head>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body style="background-color:rgb(225, 246, 249);">
+
+    <!-- header -->
+
+
+
+
+
+    </header>
+
+
+    <!-- end -->
+
+    <!-- home -->
+    <b>
+    <h1 class="title" style="font-family:Bebas Neue" > We let the dogs out 🐶</h1></b>
+  
+    </div>
+    <br>
+    <br>
+
+    <img src="static/adopteddog.jpg" width=1100 height=400 alt="" class="wave">
+
+    </section>
+
+    <!-- end -->
+
+    <!-- about -->
+
+    <section class="about" id="about">
+
+
+        <div class="content">
+            <h3 class="title">Get Involved!</h3>
+            <p>Stray dogs and cats are never the first animals that come to mind when we consider having a pet because
+                of the long-standing belief that they are "dirty" or "less than" in comparison to the more expensive
+                purebred pets that most people prefer.
+
+                Most people are unaware that strays can make just as wonderful pets in our homes as any expensive breed
+                that can be bought. </p>
+
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>We Rescue</h3>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>We Promote Adoption</h3>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-book-open"></i>
+                    <h3>We Spread Awareness</h3>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="pricing" id="pricing">
+
+        <h2 class="heading">How you can contribute</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="static/image.png" alt="">
+                <h3>Tell Others</h3>
+                <br>
+                <br>
+                <p>In case you are not able to adopt or do not find an injured animal, please do tell others!</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="text" value="Hello World" id="myInput">
+                <button class = "btn" onclick="myFunction()">Copy link!</button>
+
+            </div>
+
+            <div class="box">
+                <img src="static/adopt.jpg" alt="">
+                <h3>Adopt!</h3>
+                <br>
+                <br>
+                <p>A few hours a week with the animals means the world to them. By adopting, you are giving the dog a safe and loving home in which it can learn to be a happy and healthy dog again.</p>
+                <a href="/adopt" class="btn">Adopt!</a>
+            </div>
+
+            <div class="box">
+                <img src="static/rescue.jpg" alt="">
+                <h3>Report any injured animal you come across</h3>
+                <p>Make sure to add it in the reports tab as soon as possible. A concerned NGO will arrive at the location and rescue the pet shortly.</p>
+                <br>
+                <a href="/report" class="btn">Report!</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- gallery -->
+
+   
+
+    <!-- end -->
+
+    <!-- animals -->
+
+    <section class="animal" id="animal">
+
+        <h2 class="heading">Animals (Adoption)</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="static/dog12.jpg" alt="">
+                <div class="content">
+                    <h3>Brownie</h3>
+                    <a href="/adopt" class="btn">see datails</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="static/dog8.jpg" alt="">
+                <div class="content">
+                    <h3>Dolly</h3>
+                    <a href="/adopt" class="btn">see datails</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="static/dog5.jpg" alt="">
+                <div class="content">
+                    <h3>Zara</h3>
+                    <a href="/adopt" class="btn">see datails</a>
+                </div>
+            </div>
+        </div>
+        <a href="adopt" class="btn">View other animals!</a>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- banner -->
+
+    <section class="banner">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Our Mission</h3>
+                <p>Our animal rescue and adoption project is committed to providing compassionate care, shelter, and
+                    rehabilitation to animals in need. We endeavor to find loving forever homes through adoption while
+                    also promoting responsible pet ownership and advocating for animal welfare. Through our dedication
+                    to compassion and community engagement, we aim to create a better world for animals and humans
+                    alike, fostering empathy and kindness towards all living beings. By working responsibly to ensure
+                    the well-being of every animal in our care we strive to make a lasting positive impact on our community.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="static/output1.jpg" height=400 width=400 alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <br>
+    <br>
+
+
+    <!-- end -->
+
+    <!-- pricing -->
+
+   
+    <br>
+    <br>
+    <br>
+
+    <!-- end -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading">contact</h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <div class="inputBox">
+                <input type="hidden" name="access_key" value="7d460064-5252-419d-b49b-41498b18511a">
+                <input type="text" name = "name" placeholder="name">
+                <input type="email" name = "email" placeholder="email">
+            </div>
+
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+            <button type = "submit" class="btn btn-primary">Submit!</button>
+
+        </form>
+
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <!-- end -->
+
+    <!-- footer -->
+    
+    <footer class="footer">
+        <section class="footer">
+
+            <div class="box-container">
+    
+                
+    
+            </div>
+    
+    
+            <h2 class = "heading">About Me- Vaana Gera</h2>
+            
+    
+            <div class="box-container">
+               
+                <img src="static/me.png" class="round-image" align = "left">
+              
+                
+                <h4 class = "deco-title" >Meet Vaana, a 14-year-old 10th-grade student who balances her love for animals and technology with her hobbies of basketball and playing the violin. In her free time, she enjoys shooting hoops on the court and creating beautiful melodies. Alongside her schoolwork, she's dedicated to helping injured and homeless animals, fulfilling her compassion by crafting a website aimed at aiding them.</h4>
+                
+              
+        </section>
+        <br>
+        <br>
+        <br>
+
+        <div class="box-container">
+
+
+
+            <div class="box">
+                <h2 class="mb-2" style="font-size:3vw">Contact Info</h2>
+               
+                <br>
+                <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                    <i class="fas fa-phone" style="font-size:1vw"> +91 9717181456</i>
+                    <br>
+                    <br>
+                    
+                    <i class="fas fa-phone" style="font-size:1vw"> +91 9717050359</i>
+                    <br>
+                    <br>
+                    <i class="fas fa-envelope"style="font-size:1vw"> vaanagera16@gmail.com</i>
+                    <br>
+                    <br>
+                    <i class="fas fa-map-marker-alt"style="font-size:1vw">Haryana,India</i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2 style="font-size:3vw">Quick Links</h2>
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/" class="links"> <i class="fas fa-arrow-right"> Home</i></a>
+                    <a href="/report" class="links"> <i class="fas fa-arrow-right"> Report injured animal</i></a>
+                    <a href="/view" class="links"> <i class="fas fa-arrow-right">View injured animals</i> </a>
+                    <a href="/adopt" class="links"> <i class="fas fa-arrow-right">Adopt</i> </a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    
+</footer>
+
+
+
+
+
+    <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "agFts5KQnmYKWL77kL9az",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="agFts5KQnmYKWL77kL9az"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+
+    <script>
+    function myFunction() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      alert("Copied the text: " + copyText.value);
+    }
+    </script>
+     
+
+        
+
+</body>
+
+</html>
+{% endblock %}

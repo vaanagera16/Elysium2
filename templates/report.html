@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% extends "layout.html" %}
+
+{% block title %}
+Report
+{% endblock %}
+
+
+{% block main %}
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body >
+    
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <form enctype="multipart/form-data" action="/report" method="POST">
+                <div class="mb-3">
+                    <label style="font-size:15px" for="landmark" class="form-label">Landmark</label>
+                    <input type="text" class="form-control" id="landmark" name="landmark" placeholder="Landmark">
+                </div>
+
+                <div class="mb-3">
+                    <label style="font-size:15px" for="exactlocation" class="form-label">Exact Location</label>
+                    <input type="text" class="form-control" id="exactlocation" name="exactlocation" placeholder="Exact Location">
+                </div>
+
+                <div class="mb-3">
+                    <label style="font-size:15px" for="photo" class="form-label">Upload Photo with Clear Surroundings</label>
+                    <input class="form-control" type="file" id="photo" name="photo">
+                </div>
+
+                <div class="mb-3">
+                    <label style="font-size:15px" for="notes" class="form-label">Additional Notes(Optional)</label>
+                    <input type="text" class="form-control" id="notes" name="notes" placeholder="Limping on right leg...">
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <footer class="footer">
+
+        <div class="box-container">
+
+
+
+            <div class="box">
+                <h2 class="mb-2" style="font-size:2vw">Contact Info</h2>
+               
+                <br>
+                <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                    <i class="fas fa-phone" style="font-size:1vw"> +91 9717181456</i>
+                    <br>
+                    <br>
+                    
+                    <i class="fas fa-phone" style="font-size:1vw"> +91 9717050359</i>
+                    <br>
+                    <br>
+                    <i class="fas fa-envelope"style="font-size:1vw"> vaanagera16@gmail.com</i>
+                    <br>
+                    <br>
+                    <i class="fas fa-map-marker-alt"style="font-size:1vw">Haryana,India</i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2 style="font-size:2vw">Quick Links</h2>
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/" class="links"> <i class="fas fa-arrow-right"> Home</i></a>
+                    <a href="/report" class="links"> <i class="fas fa-arrow-right"> Report injured animal</i></a>
+                    <a href="/view" class="links"> <i class="fas fa-arrow-right">View injured animals</i> </a>
+                    <a href="/adopt" class="links"> <i class="fas fa-arrow-right">Adopt</i> </a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    
+</footer>
+</body>
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "agFts5KQnmYKWL77kL9az",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="agFts5KQnmYKWL77kL9az"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+    {% endblock %}
+
+    <script>
+
+        document.onload = () => {
+            const x = document.getElementById("exactlocation");
+            let location = "";
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition((position) => {
+                    location = position;
+                }, () => {
+                    x.innerHTML = "Unable to retrieve location";
+                });
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+                return;
+            }
+            x.value = location;
+        }
+
+    </script>
+    
